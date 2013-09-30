@@ -1620,6 +1620,10 @@ input.search-query {
   padding: 5px;
 }
 
+.other-box {
+  margin: 15px;
+}
+
 legend + .control-group {
   margin-top: 20px;
   -webkit-margin-top-collapse: separate;

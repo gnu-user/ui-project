@@ -21,7 +21,7 @@
 ?>
       <footer class="footer">
         <div class="pull-left">
-          <p>Designed and built by <a target="_blank" href="https://github.com/gnu-user/organic-survey">Jonathan Gillet, Daniel Smullen, Matteo Ferrando, Joseph Heron</a></p>
+          <p>Designed and built by <a target="_blank" href="https://github.com/gnu-user/ui-project">Jonathan Gillet, Daniel Smullen, Matteo Ferrando, Joseph Heron</a></p>
           <p>This website is Open Source, code licensed under the
             <a target="_blank" href="http://www.gnu.org/licenses/agpl-3.0.html">GNU Affero General Public License, Version 3</a>
           </p>
@@ -34,5 +34,6 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery-1.9.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/other.js"></script>
   </body>
 </html>

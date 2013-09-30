@@ -71,7 +71,7 @@
                                 <option value="Shouting">Shouting out loud</option>
                                 <option value="Other">Other (Please specify)</option>
                             </select>
-                            <input type="text" style="display: none;">
+                            <input type="text" id="other-q1" class="other-box" style="display: none;">
                         </div>
                     </div>
                     <!-- FLOOR PLANS EFFECTIVE -->
@@ -93,7 +93,7 @@
                     <div class="control-group outer">
                         <strong><strong>
                             In a stressful situation, how easy is it to relay important situational information on the medium specified?
-                            <br><br>In each situation, assume that the circumstances make it impossible to use any other medium except the one specified (due to noise, smoke, and so on).
+                            <br><br>In each situation, assume that the circumstances make it impossible to use any other medium except the one specified (due to noise, smoke, and so on).<br><br>
                         </strong></strong>
                         <!-- RADIO  -->
                         <div class="control-group">
@@ -160,7 +160,7 @@
                     <div class="control-group outer">
                         <strong><strong>
                             In a stressful situation, how easy is it to determine the location of your partners using the medium specified?
-                            <br><br>In each situation, assume that the circumstances make it impossible to use any other medium except the one specified (due to noise, smoke, and so on).
+                            <br><br>In each situation, assume that the circumstances make it impossible to use any other medium except the one specified (due to noise, smoke, and so on).<br><br>
                         </strong></strong>
                         <!-- RADIO  -->
                         <div class="control-group inner">
