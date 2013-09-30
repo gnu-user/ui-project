@@ -90,9 +90,11 @@
                         </div>
                     </div>
                     <!-- STRESSFUL SITUATION ON MEDIUM -->
-                    <div class="control-group">
-                        In a stressful situation, how easy is it to relay important situational information on the medium specified?
-                        In each situation, assume that the circumstances make it impossible to use any other medium except the one specified (due to noise, smoke, and so on).
+                    <div class="control-group outer">
+                        <strong><strong>
+                            In a stressful situation, how easy is it to relay important situational information on the medium specified?
+                            <br><br>In each situation, assume that the circumstances make it impossible to use any other medium except the one specified (due to noise, smoke, and so on).
+                        </strong></strong>
                         <!-- RADIO  -->
                         <div class="control-group">
                             <label for="q3a" class="control-label"><strong><strong>Radio:</strong></strong></label>
@@ -155,13 +157,13 @@
                         </div>
                     </div>
                     <!-- STRESSFUL SITUATION ON MEDIUM -->
-                    <div class="control-group">
-                        <divclass="control-label"><strong><strong>
+                    <div class="control-group outer">
+                        <strong><strong>
                             In a stressful situation, how easy is it to determine the location of your partners using the medium specified?
-                            In each situation, assume that the circumstances make it impossible to use any other medium except the one specified (due to noise, smoke, and so on).
-                        </strong></strong></div>
+                            <br><br>In each situation, assume that the circumstances make it impossible to use any other medium except the one specified (due to noise, smoke, and so on).
+                        </strong></strong>
                         <!-- RADIO  -->
-                        <div class="control-group">
+                        <div class="control-group inner">
                             <label for="q4a" class="control-label"><strong><strong>Radio:</strong></strong></label>
                             <div class="controls">
                                 <select id="q4a" name="q4a" class="input-xlarge">
@@ -176,7 +178,7 @@
                             </div>
                         </div>
                         <!-- VERBAL  -->
-                        <div class="control-group">
+                        <div class="control-group inner">
                             <label for="q4b" class="control-label"><strong><strong>Verbal / Audible message / Shouting:</strong></strong></label>
                             <div class="controls">
                                 <select id="q4b" name="q4b" class="input-xlarge">
@@ -191,7 +193,7 @@
                             </div>
                         </div>
                         <!-- HAND  -->
-                        <div class="control-group">
+                        <div class="control-group inner">
                             <label for="q4c" class="control-label"><strong><strong>Hand command / Gesture / Pointing:</strong></strong></label>
                             <div class="controls">
                                 <select id="q4c" name="q4c" class="input-xlarge">
@@ -206,7 +208,7 @@
                             </div>
                         </div>
                         <!-- TOUCH  -->
-                        <div class="control-group">
+                        <div class="control-group inner">
                             <label for="q4d" class="control-label"><strong><strong>Tactile command / Shoulder tap:</strong></strong></label>
                             <div class="controls">
                                 <select id="q4d" name="q4d" class="input-xlarge">
