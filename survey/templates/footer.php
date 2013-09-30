@@ -1,8 +1,8 @@
 <?php
 /*
- *  Organic Food Survey
+ *  User Interfaces Survey
  *
- *  Copyright (C) 2013 Jonathan Gillett
+ *  Copyright (C) 2013 Jonathan Gillet, Daniel Smullen, Matteo Ferrando, Joseph Heron
  *  All rights reserved.
  *
  *  This program is free software: you can redistribute it and/or modify
@@ -21,11 +21,11 @@
 ?>
       <footer class="footer">
         <div class="pull-left">
-          <p>Designed and built by <a target="_blank" href="https://github.com/gnu-user/organic-survey">Jonathan Gillett</a></p>
-          <p>This website is Open Source, code licensed under the 
+          <p>Designed and built by <a target="_blank" href="https://github.com/gnu-user/organic-survey">Jonathan Gillet, Daniel Smullen, Matteo Ferrando, Joseph Heron</a></p>
+          <p>This website is Open Source, code licensed under the
             <a target="_blank" href="http://www.gnu.org/licenses/agpl-3.0.html">GNU Affero General Public License, Version 3</a>
           </p>
-          <p><strong>&copy; Jonathan Gillett</strong></p>
+          <p><strong>&copy; Jonathan Gillet, Daniel Smullen, Matteo Ferrando, Joseph Heron</strong></p>
         </div>
       </footer>
     </div>
