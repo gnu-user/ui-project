@@ -68,12 +68,12 @@
                 <br><br>
                 Members in the field would also be able to feel the heartbeat and distance of their nearest partner.
             </div>
-            <form id="form_id" class="well form-horizontal" action="submit.php" method="post" accept-charset="UTF-8">
+            <form id="form_id" class="form-horizontal" action="submit.php" method="post" accept-charset="UTF-8">
                 <fieldset>
                     <!-- COMMUNICATIONS UNDER STRESSFUL SITUATION -->
-                    <div class="control-group">
-                    <p><strong>When you are in a stressful situation, which communications medium do you pick first to signal for help?</strong></p>
-                        <label for="q1" class="control-label"><strong>Select one of the following:</strong></label>
+                    <div class="control-group well">
+                    <p>When you are in a <strong>stressful situation</strong>, which <strong>communications medium do you pick first</strong> to signal for help?</p>
+                        <label for="q1" class="control-label">Select one of the following:</label>
                         <div class="controls">
                             <select id="q1" name="q1" class="input-xlarge">
                                 <option>Please choose</option>
@@ -86,9 +86,9 @@
                         </div>
                     </div>
                     <!-- FLOOR PLANS EFFECTIVE -->
-                    <div class="control-group">
-                    <p><strong>How effective are maps/floor plans when attempting to navigate through a complex/building?</strong></p>
-                        <label for="q2" class="control-label"><strong>Select one of the following:</strong></label>
+                    <div class="control-group well">
+                    <p>How <strong>effective</strong> are <strong>maps/floor</strong> plans when attempting to <strong>navigate</strong> through a complex/building?</p>
+                        <label for="q2" class="control-label">Select one of the following:</label>
                         <div class="controls">
                             <select id="q2" name="q2" class="input-xlarge">
                                 <option>Please choose</option>
@@ -103,11 +103,11 @@
                     </div>
                     <!-- STRESSFUL SITUATION ON MEDIUM -->
                     <div class="control-group well">
-                        <p><strong>In a stressful situation, how easy is it to relay important situational information on the medium specified?</strong></p>
+                        <p>In a stressful situation, <strong>how easy</strong> is it to relay <strong>important situational information</strong> on the medium specified?</p>
                         <p><strong>In each situation, assume that the circumstances make it impossible to use any other medium except the one specified (due to noise, smoke, and so on).</strong></p>
                         <!-- RADIO  -->
                         <div class="control-group">
-                            <label for="q3a" class="control-label"><strong><strong>Radio:</strong></strong></label>
+                            <label for="q3a" class="control-label">Radio:</label>
                             <div class="controls">
                                 <select id="q3a" name="q3a" class="input-xlarge">
                                     <option>Please choose</option>
@@ -122,7 +122,7 @@
                         </div>
                         <!-- VERBAL  -->
                         <div class="control-group">
-                            <label for="q3b" class="control-label"><strong><strong>Verbal / Audible message / Shouting:</strong></strong></label>
+                            <label for="q3b" class="control-label">Verbal / Audible message / Shouting:</label>
                             <div class="controls">
                                 <select id="q3b" name="q3b" class="input-xlarge">
                                     <option>Please choose</option>
@@ -137,7 +137,7 @@
                         </div>
                         <!-- HAND  -->
                         <div class="control-group">
-                            <label for="q3c" class="control-label"><strong><strong>Hand command / Gesture / Pointing:</strong></strong></label>
+                            <label for="q3c" class="control-label">Hand command / Gesture / Pointing:</label>
                             <div class="controls">
                                 <select id="q3c" name="q3c" class="input-xlarge">
                                     <option>Please choose</option>
@@ -152,7 +152,7 @@
                         </div>
                         <!-- TOUCH  -->
                         <div class="control-group">
-                            <label for="q3d" class="control-label"><strong><strong>Tactile command / Shoulder tap:</strong></strong></label>
+                            <label for="q3d" class="control-label">Tactile command / Shoulder tap:</label>
                             <div class="controls">
                                 <select id="q3d" name="q3d" class="input-xlarge">
                                     <option>Please choose</option>
@@ -168,11 +168,10 @@
                     </div>
                     <!-- STRESSFUL SITUATION ON MEDIUM -->
                     <div class="control-group well">
-                        <p><strong>In a stressful situation, how easy is it to determine the location of your partners using the medium specified?</strong></p>
-                        <p><strong>In each situation, assume that the circumstances make it impossible to use any other medium except the one specified (due to noise, smoke, and so on).</strong><p>
+                        <p>In a stressful situation, <strong>how easy</strong> is it to determine the <strong>location</strong> of your partners using the medium specified?</p>
                         <!-- RADIO  -->
-                        <div class="control-group inner">
-                            <label for="q4a" class="control-label"><strong><strong>Radio:</strong></strong></label>
+                        <div class="control-group">
+                            <label for="q4a" class="control-label">Radio:</label>
                             <div class="controls">
                                 <select id="q4a" name="q4a" class="input-xlarge">
                                     <option>Please choose</option>
@@ -186,8 +185,8 @@
                             </div>
                         </div>
                         <!-- VERBAL  -->
-                        <div class="control-group inner">
-                            <label for="q4b" class="control-label"><strong><strong>Verbal / Audible message / Shouting:</strong></strong></label>
+                        <div class="control-group">
+                            <label for="q4b" class="control-label">Verbal / Audible message / Shouting:</label>
                             <div class="controls">
                                 <select id="q4b" name="q4b" class="input-xlarge">
                                     <option>Please choose</option>
@@ -201,8 +200,8 @@
                             </div>
                         </div>
                         <!-- HAND  -->
-                        <div class="control-group inner">
-                            <label for="q4c" class="control-label"><strong><strong>Hand command / Gesture / Pointing:</strong></strong></label>
+                        <div class="control-group">
+                            <label for="q4c" class="control-label">Hand command / Gesture / Pointing:</label>
                             <div class="controls">
                                 <select id="q4c" name="q4c" class="input-xlarge">
                                     <option>Please choose</option>
@@ -216,8 +215,8 @@
                             </div>
                         </div>
                         <!-- TOUCH  -->
-                        <div class="control-group inner">
-                            <label for="q4d" class="control-label"><strong><strong>Tactile command / Shoulder tap:</strong></strong></label>
+                        <div class="control-group">
+                            <label for="q4d" class="control-label">Tactile command / Shoulder tap:</label>
                             <div class="controls">
                                 <select id="q4d" name="q4d" class="input-xlarge">
                                     <option>Please choose</option>
@@ -232,9 +231,9 @@
                         </div>
                     </div>
                     <!-- CHOOSE MEDIUM -->
-                    <div class="control-group">
-                        <p><strong>Please choose which medium you would prefer as your fastest, most effective communications tool?</strong></p>
-                        <label for="q5" class="control-label"><strong>Select one of the following:</strong></label>
+                    <div class="control-group well">
+                        <p>Please choose which medium you would prefer as your <strong>fastest, most effective communications tool</strong>?</p>
+                        <label for="q5" class="control-label">Select one of the following:</label>
                         <div class="controls">
                             <select id="q5" name="q5" class="input-xlarge">
                                 <option>Please choose</option>
@@ -246,9 +245,9 @@
                         </div>
                     </div>
                     <!-- BEST WAY OF KNOWING PARTERNS ARE NEARBY -->
-                    <div class="control-group">
-                        <p><strong>When in a stressful situation, which is the best way of knowing that your partners are nearby?</strong></p>
-                        <label for="q6" class="control-label"><strong>Select one of the following:</strong></label>
+                    <div class="control-group well">
+                        <p>When in a stressful situation, which is the <strong>best way</strong> of knowing that your <strong>partners are nearby</strong>(choose one)?</p>
+                        <label for="q6" class="control-label">Select one of the following:</label>
                         <div class="controls">
                             <select id="q6" name="q6" class="input-xlarge">
                                 <option>Please choose</option>
@@ -261,9 +260,9 @@
                         </div>
                     </div>
                     <!-- IMPORTANCE OF KNOWING PARTNERS ARE NEARBY -->
-                    <div class="control-group">
-                        <p><strong>How important is it in a stressful situation to know where your partners are?</strong></p>
-                        <label for="q7" class="control-label"><strong>Select one of the following:</strong></label>
+                    <div class="control-group well">
+                        <p><strong>How important</strong> is it in a stressful situation to know <strong>where your partners are</strong>?</p>
+                        <label for="q7" class="control-label">Select one of the following:</label>
                         <div class="controls">
                             <select id="q7" name="q7" class="input-xlarge">
                                 <option>Please choose</option>
@@ -277,9 +276,9 @@
                         </div>
                     </div>
                     <!-- IMPORTANCE OF KNOWING PARTNERS LOCATION -->
-                    <div class="control-group">
-                        <p><strong>How easy is it to do your job effectively when you are constantly aware of your partners’ locations?</strong></p>
-                        <label for="q8" class="control-label"><strong>Select one of the following:</strong></label>
+                    <div class="control-group well">
+                        <p><strong>How easy</strong> is it to do your job effectively when you are <strong>constantly aware of your partners’ locations</strong>?</p>
+                        <label for="q8" class="control-label">Select one of the following:</label>
                         <div class="controls">
                             <select id="q8" name="q8" class="input-xlarge">
                                 <option>Please choose</option>
@@ -293,9 +292,9 @@
                         </div>
                     </div>
                     <!-- IMPORTANCE OF QUICK ACCESS TO A MAP OF SURROUNDINGS -->
-                    <div class="control-group">
-                        <p><strong>If you are in an unfamiliar location, how important is having quick access to a map of your surroundings?</strong></p>
-                        <label for="q9" class="control-label"><strong>Select one of the following:</strong></label>
+                    <div class="control-group well">
+                        <p>If you are in an <strong>unfamiliar location</strong>, how important is having <strong>quick access to a map</strong> of your surroundings?</p>
+                        <label for="q9" class="control-label">Select one of the following:</label>
                         <div class="controls">
                             <select id="q9" name="q9" class="input-xlarge">
                                 <option>Please choose</option>
@@ -309,9 +308,9 @@
                         </div>
                     </div>
                     <!-- BEING AWARE OF PARTNERS NEARBY -->
-                    <div class="control-group">
-                        <p><strong>When you are aware that your partners are nearby, do you feel more at ease in a stressful situation?</strong></p>
-                        <label for="q19" class="control-label"><strong>Select one of the following:</strong></label>
+                    <div class="control-group well">
+                        <p>When you are <strong>aware that your partners are nearby</strong>, do you feel more <strong>at ease</strong> in a stressful situation?</p>
+                        <label for="q10" class="control-label">Select one of the following:</label>
                         <div class="controls">
                             <select id="q10" name="q10" class="input-xlarge">
                                 <option>Please choose</option>
