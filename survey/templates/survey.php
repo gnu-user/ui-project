@@ -62,21 +62,23 @@
                 <fieldset>
                     <!-- COMMUNICATIONS UNDER STRESSFUL SITUATION -->
                     <div class="control-group">
-                        <label for="q1" class="control-label"><strong><strong>When you are in a stressful situation, which communications medium do you pick first to signal for help?</strong></strong></label>
+                    <p><strong>When you are in a stressful situation, which communications medium do you pick first to signal for help?</strong></p>
+                        <label for="q1" class="control-label"><strong>Select one of the following:</strong></label>
                         <div class="controls">
                             <select id="q1" name="q1" class="input-xlarge">
                                 <option>Please choose</option>
                                 <option value="Radio">Radio</option>
                                 <option value="Panic">Panic Button</option>
                                 <option value="Shouting">Shouting out loud</option>
-                                <option value="Other">Other (Please specify)</option>
+                                <option value="Other">Other (please specify)</option>
                             </select>
                             <input type="text" id="other-q1" class="other-box" style="display: none;">
                         </div>
                     </div>
                     <!-- FLOOR PLANS EFFECTIVE -->
                     <div class="control-group">
-                        <label for="q2" class="control-label"><strong><strong>How effective are maps/floor plans when attempting to navigate through a complex/building?</strong></strong></label>
+                    <p><strong>How effective are maps/floor plans when attempting to navigate through a complex/building?</strong></p>
+                        <label for="q2" class="control-label"><strong>Select one of the following:</strong></label>
                         <div class="controls">
                             <select id="q2" name="q2" class="input-xlarge">
                                 <option>Please choose</option>
@@ -91,10 +93,8 @@
                     </div>
                     <!-- STRESSFUL SITUATION ON MEDIUM -->
                     <div class="control-group outer">
-                        <strong><strong>
-                            In a stressful situation, how easy is it to relay important situational information on the medium specified?
-                            <br><br>In each situation, assume that the circumstances make it impossible to use any other medium except the one specified (due to noise, smoke, and so on).<br><br>
-                        </strong></strong>
+                        <p><strong>In a stressful situation, how easy is it to relay important situational information on the medium specified?</strong></p>
+                        <p><strong>In each situation, assume that the circumstances make it impossible to use any other medium except the one specified (due to noise, smoke, and so on).</strong></p>
                         <!-- RADIO  -->
                         <div class="control-group">
                             <label for="q3a" class="control-label"><strong><strong>Radio:</strong></strong></label>
@@ -158,10 +158,8 @@
                     </div>
                     <!-- STRESSFUL SITUATION ON MEDIUM -->
                     <div class="control-group outer">
-                        <strong><strong>
-                            In a stressful situation, how easy is it to determine the location of your partners using the medium specified?
-                            <br><br>In each situation, assume that the circumstances make it impossible to use any other medium except the one specified (due to noise, smoke, and so on).<br><br>
-                        </strong></strong>
+                        <p><strong>In a stressful situation, how easy is it to determine the location of your partners using the medium specified?</strong></p>
+                        <p><strong>In each situation, assume that the circumstances make it impossible to use any other medium except the one specified (due to noise, smoke, and so on).</strong><p>
                         <!-- RADIO  -->
                         <div class="control-group inner">
                             <label for="q4a" class="control-label"><strong><strong>Radio:</strong></strong></label>
@@ -225,7 +223,8 @@
                     </div>
                     <!-- CHOOSE MEDIUM -->
                     <div class="control-group">
-                        <label for="q5" class="control-label"><strong>Please choose which medium you would prefer as your fastest, most effective communications tool:</strong></label>
+                        <p><strong>Please choose which medium you would prefer as your fastest, most effective communications tool?</strong></p>
+                        <label for="q5" class="control-label"><strong>Select one of the following:</strong></label>
                         <div class="controls">
                             <select id="q5" name="q5" class="input-xlarge">
                                 <option>Please choose</option>
@@ -236,59 +235,78 @@
                             </select>
                         </div>
                     </div>
-                    <!-- CRUST -->
+                    <!-- BEST WAY OF KNOWING PARTERNS ARE NEARBY -->
                     <div class="control-group">
-                        <label for="crust" class="control-label"><strong>The taste of the crust was:</strong></label>
+                        <p><strong>When in a stressful situation, which is the best way of knowing that your partners are nearby?</strong></p>
+                        <label for="q6" class="control-label"><strong>Select one of the following:</strong></label>
                         <div class="controls">
-                            <select id="crust" name="crust" class="input-xlarge">
+                            <select id="q6" name="q6" class="input-xlarge">
                                 <option>Please choose</option>
-                                <option value="1">Worst crust I've ever tasted</option>
-                                <option value="2">Barely edible</option>
-                                <option value="3">Mediocre</option>
-                                <option value="4">Good</option>
-                                <option value="5">Best crust I've ever tasted</option>
+                                <option value="1">Radio</option>
+                                <option value="2">Verbal/audible message/shouting</option>
+                                <option value="3">Line of sight</option>
+                                <option value="4">Other (please specify)</option>
+                            </select>
+                            <input type="text" style="display: none;">
+                        </div>
+                    </div>
+                    <!-- IMPORTANCE OF KNOWING PARTNERS ARE NEARBY -->
+                    <div class="control-group">
+                        <p><strong>How important is it in a stressful situation to know where your partners are?</strong></p>
+                        <label for="q7" class="control-label"><strong>Select one of the following:</strong></label>
+                        <div class="controls">
+                            <select id="q7" name="q7" class="input-xlarge">
+                                <option>Please choose</option>
+                                <option value="1">Don’t know</option>
+                                <option value="2">Very unimportant</option>
+                                <option value="3">Unimportant</option>
+                                <option value="4">I don't feel strongly either way</option>
+                                <option value="5">Important</option>
+                                <option value="6">Very important</option>
                             </select>
                         </div>
                     </div>
-                    <!-- TOPPINGS -->
+                    <!-- IMPORTANCE OF KNOWING PARTNERS LOCATION -->
                     <div class="control-group">
-                        <label for="toppings" class="control-label"><strong>The taste of the toppings was:</strong></label>
+                        <p><strong>How easy is it to do your job effectively when you are constantly aware of your partners’ locations?</strong></p>
+                        <label for="q8" class="control-label"><strong>Select one of the following:</strong></label>
                         <div class="controls">
-                            <select id="toppings" name="toppings" class="input-xlarge">
+                            <select id="q8" name="q8" class="input-xlarge">
                                 <option>Please choose</option>
-                                <option value="1">Worst tasting toppings I've ever had</option>
-                                <option value="2">Barely edible</option>
-                                <option value="3">Mediocre</option>
-                                <option value="4">Good</option>
-                                <option value="5">Best tasting toppings I've ever had</option>
+                                <option value="1">Don’t know</option>
+                                <option value="2">Very difficult</option>
+                                <option value="3">Difficult</option>
+                                <option value="4">I don't feel strongly either way</option>
+                                <option value="5">Easy</option>
+                                <option value="6">Very easy</option>
                             </select>
                         </div>
                     </div>
-                    <!-- VISUAL -->
+                    <!-- IMPORTANCE OF QUICK ACCESS TO A MAP OF SURROUNDINGS -->
                     <div class="control-group">
-                        <label for="visual" class="control-label"><strong>The visual appeal was:</strong></label>
+                        <p><strong>If you are in an unfamiliar location, how important is having quick access to a map of your surroundings?</strong></p>
+                        <label for="q9" class="control-label"><strong>Select one of the following:</strong></label>
                         <div class="controls">
-                            <select id="visual" name="visual" class="input-xlarge">
+                            <select id="q9" name="q9" class="input-xlarge">
                                 <option>Please choose</option>
-                                <option value="1">Worst looking pizza I've ever seen</option>
-                                <option value="2">Poor aesthetic appeal</option>
-                                <option value="3">Mediocre aesthetic appeal</option>
-                                <option value="4">Good aesthetic appeal</option>
-                                <option value="5">Best looking pizza I've ever seen</option>
+                                <option value="1">Don’t know</option>
+                                <option value="2">Very unimportant</option>
+                                <option value="3">Unimportant</option>
+                                <option value="4">I don't feel strongly either way</option>
+                                <option value="5">Important</option>
+                                <option value="6">Very important</option>
                             </select>
                         </div>
                     </div>
-                    <!-- AROMA -->
+                    <!-- BEING AWARE OF PARTNERS NEARBY -->
                     <div class="control-group">
-                        <label for="aroma" class="control-label"><strong>The aroma was:</strong></label>
+                        <p><strong>When you are aware that your partners are nearby, do you feel more at ease in a stressful situation?</strong></p>
+                        <label for="q19" class="control-label"><strong>Select one of the following:</strong></label>
                         <div class="controls">
-                            <select id="aroma" name="aroma" class="input-xlarge">
+                            <select id="q10" name="q10" class="input-xlarge">
                                 <option>Please choose</option>
-                                <option value="1">Worst smelling pizza I've ever had</option>
-                                <option value="2">Poor aroma</option>
-                                <option value="3">Mediocre aroma</option>
-                                <option value="4">Good aroma</option>
-                                <option value="5">Best smelling pizza I've ever had</option>
+                                <option value="1">Yes</option>
+                                <option value="0">No</option>
                             </select>
                         </div>
                     </div>
