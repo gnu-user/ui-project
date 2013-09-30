@@ -7,24 +7,33 @@ DATABASE SETUP
 1.  Create a new database for the purpose of the survey as a LIMITED account.
     
     ```sql
-    CREATE DATABASE organic_survey;
+    CREATE DATABASE ui_survey;
     ```
 
 2.  Create a table to store the survey results.
 
     ```sql
-    USE organic_survey;
+    USE ui_survey;
     
     CREATE TABLE results  
     (  
-        test_cat    BOOLEAN NOT NULL,
-        is_organic  BOOLEAN NOT NULL, 
-        taste       TINYINT UNSIGNED NOT NULL,  
-        texture     TINYINT UNSIGNED NOT NULL, 
-        crust       TINYINT UNSIGNED NOT NULL, 
-        toppings    TINYINT UNSIGNED NOT NULL, 
-        visual      TINYINT UNSIGNED NOT NULL, 
-        aroma       TINYINT UNSIGNED NOT NULL, 
+        q1          VARCHAR(1024) NOT NULL,
+        q2          TINYINT UNSIGNED NOT NULL, 
+        q3a         TINYINT UNSIGNED NOT NULL,
+        q3b         TINYINT UNSIGNED NOT NULL,
+        q3c         TINYINT UNSIGNED NOT NULL,
+        q3d         TINYINT UNSIGNED NOT NULL,
+        q4a         TINYINT UNSIGNED NOT NULL,
+        q4b         TINYINT UNSIGNED NOT NULL,
+        q4c         TINYINT UNSIGNED NOT NULL,
+        q4d         TINYINT UNSIGNED NOT NULL,       
+        q5          TINYINT UNSIGNED NOT NULL, 
+        q6          VARCHAR(1024) NOT NULL,
+        q7          TINYINT UNSIGNED NOT NULL,
+        q8          TINYINT UNSIGNED NOT NULL,
+        q9          TINYINT UNSIGNED NOT NULL,
+        q10         BOOLEAN NOT NULL,
+        feedback    TEXT DEFAULT NULL,
         submit_date DATE NOT NULL 
     );
     ```
