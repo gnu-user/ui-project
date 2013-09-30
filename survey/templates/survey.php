@@ -58,6 +58,16 @@
                           </div>';
                 }
             ?>
+            <!-- INTRO -->
+            <div class="well">
+                This study aims to determine the usefulness of a passive means of communication for high stress situations where active communication (such as radio) is made difficult because of active and attention demanding environments.
+                <br><br>
+                The system would also allow for a 'command center' to allow for efficient active communication to each member from a team leader.
+                <br><br>
+                Each member would be able to physically ‘feel’ their way through a situation using the commands relayed through the team leader.
+                <br><br>
+                Members in the field would also be able to feel the heartbeat and distance of their nearest partner.
+            </div>
             <form id="form_id" class="well form-horizontal" action="submit.php" method="post" accept-charset="UTF-8">
                 <fieldset>
                     <!-- COMMUNICATIONS UNDER STRESSFUL SITUATION -->
