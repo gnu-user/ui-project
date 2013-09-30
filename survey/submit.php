@@ -53,11 +53,12 @@ if (       isset($_POST['q1'])
         && isset($_POST['q8'])  && is_numeric($_POST['q8'])
         && isset($_POST['q9'])  && is_numeric($_POST['q9'])
         && isset($_POST['q10'])  && is_numeric($_POST['q10'])
+        && isset($_POST['feedback'])
     )
 {
 
     /* Submit the survey results */
-    submit_survey($mysqli_conn, $_POST['q1'], $_POST['q2'], $_POST['q3a'], $_POST['q3b'], $_POST['q3c']
+    submit_survey($mysqli_conn, $_POST['q1'], $_POST['q2'], $_POST['q3a'], $_POST['q3b'], $_POST['q3c'], 
                   $_POST['q3d'], $_POST['q4a'], $_POST['q4b'], $_POST['q4c'], $_POST['q4d'], $_POST['q5'],
                   $_POST['q6'], $_POST['q7'], $_POST['q8'], $_POST['q9'], $_POST['q10'], $_POST['feedback']);
 

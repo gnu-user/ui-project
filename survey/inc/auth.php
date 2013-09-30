@@ -33,5 +33,5 @@
 /* Database access */
 $db_user = 'jon';
 $db_pass = 'test123';
-$db_name = 'organic_survey';
+$db_name = 'ui_survey';
 ?>
