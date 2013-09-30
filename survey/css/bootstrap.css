@@ -1615,14 +1615,6 @@ input.search-query {
   margin-bottom: 10px;
 }
 
-.outer {
-  border: solid 2px;
-  padding: 5px;
-}
-
-.other-box {
-  margin: 15px;
-}
 
 legend + .control-group {
   margin-top: 20px;

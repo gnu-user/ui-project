@@ -72,7 +72,7 @@
                                 <option value="Shouting">Shouting out loud</option>
                                 <option value="Other">Other (please specify)</option>
                             </select>
-                            <input type="text" id="other-q1" class="other-box" style="display: none;">
+                            <input type="text" id="other-q1" class="input-xlarge other-box" style="display: none;">
                         </div>
                     </div>
                     <!-- FLOOR PLANS EFFECTIVE -->
@@ -92,7 +92,7 @@
                         </div>
                     </div>
                     <!-- STRESSFUL SITUATION ON MEDIUM -->
-                    <div class="control-group outer">
+                    <div class="control-group well">
                         <p><strong>In a stressful situation, how easy is it to relay important situational information on the medium specified?</strong></p>
                         <p><strong>In each situation, assume that the circumstances make it impossible to use any other medium except the one specified (due to noise, smoke, and so on).</strong></p>
                         <!-- RADIO  -->
@@ -157,7 +157,7 @@
                         </div>
                     </div>
                     <!-- STRESSFUL SITUATION ON MEDIUM -->
-                    <div class="control-group outer">
+                    <div class="control-group well">
                         <p><strong>In a stressful situation, how easy is it to determine the location of your partners using the medium specified?</strong></p>
                         <p><strong>In each situation, assume that the circumstances make it impossible to use any other medium except the one specified (due to noise, smoke, and so on).</strong><p>
                         <!-- RADIO  -->
@@ -247,7 +247,7 @@
                                 <option value="3">Line of sight</option>
                                 <option value="4">Other (please specify)</option>
                             </select>
-                            <input type="text" style="display: none;">
+                            <input type="text" id="other-q1" class="input-xlarge other-box" style="display: none;">
                         </div>
                     </div>
                     <!-- IMPORTANCE OF KNOWING PARTNERS ARE NEARBY -->
