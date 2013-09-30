@@ -1,8 +1,8 @@
 <?php
 /*
- *  Organic Food Survey
+ *  User Interfaces Survey
  *
- *  Copyright (C) 2013 Jonathan Gillett
+ *  Copyright (C) 2013 Jonathan Gillet, Daniel Smullen, Matteo Ferrando, Joseph Heron
  *  All rights reserved.
  *
  *  This program is free software: you can redistribute it and/or modify

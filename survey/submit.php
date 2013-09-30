@@ -1,8 +1,8 @@
 <?php
 /*
- *  Organic Food Survey
+ *  User Interfaces Survey
  *
- *  Copyright (C) 2013 Jonathan Gillett
+ *  Copyright (C) 2013 Jonathan Gillet, Daniel Smullen, Matteo Ferrando, Joseph Heron
  *  All rights reserved.
  *
  *  This program is free software: you can redistribute it and/or modify
@@ -34,15 +34,15 @@ if (!valid_mysqli_connect($mysqli_conn))
     exit();
 }
 
-/* 
- * If all of the survey information is set add the results to the results table 
+/*
+ * If all of the survey information is set add the results to the results table
  */
-if (       isset($_POST['test_cat']) && is_numeric($_POST['test_cat']) 
-        && isset($_POST['is_organic']) && is_numeric($_POST['is_organic']) 
-        && isset($_POST['taste']) && is_numeric($_POST['taste']) 
-        && isset($_POST['texture']) && is_numeric($_POST['texture']) 
+if (       isset($_POST['test_cat']) && is_numeric($_POST['test_cat'])
+        && isset($_POST['is_organic']) && is_numeric($_POST['is_organic'])
+        && isset($_POST['taste']) && is_numeric($_POST['taste'])
+        && isset($_POST['texture']) && is_numeric($_POST['texture'])
         && isset($_POST['crust']) && is_numeric($_POST['crust'])
-        && isset($_POST['toppings']) && is_numeric($_POST['toppings']) 
+        && isset($_POST['toppings']) && is_numeric($_POST['toppings'])
         && isset($_POST['visual']) && is_numeric($_POST['visual'])
         && isset($_POST['aroma']) && is_numeric($_POST['aroma'])
     )
