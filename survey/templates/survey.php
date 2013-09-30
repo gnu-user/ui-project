@@ -58,7 +58,7 @@
                           </div>';
                 }
             ?>
-            <form id="from_id" class="well form-horizontal" action="submit.php" method="post" accept-charset="UTF-8">
+            <form id="form_id" class="well form-horizontal" action="submit.php" method="post" accept-charset="UTF-8">
                 <fieldset>
                     <!-- COMMUNICATIONS UNDER STRESSFUL SITUATION -->
                     <div class="control-group">
