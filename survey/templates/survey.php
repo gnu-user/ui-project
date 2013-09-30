@@ -242,12 +242,12 @@
                         <div class="controls">
                             <select id="q6" name="q6" class="input-xlarge">
                                 <option>Please choose</option>
-                                <option value="1">Radio</option>
-                                <option value="2">Verbal/audible message/shouting</option>
-                                <option value="3">Line of sight</option>
-                                <option value="4">Other (please specify)</option>
+                                <option value="Radio">Radio</option>
+                                <option value="Verbal">Verbal/audible message/shouting</option>
+                                <option value="Line">Line of sight</option>
+                                <option value="Other">Other (please specify)</option>
                             </select>
-                            <input type="text" id="other-q1" class="input-xlarge other-box" style="display: none;">
+                            <input type="text" id="other-q6" class="input-xlarge other-box" style="display: none;">
                         </div>
                     </div>
                     <!-- IMPORTANCE OF KNOWING PARTNERS ARE NEARBY -->
