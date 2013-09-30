@@ -37,27 +37,29 @@ if (!valid_mysqli_connect($mysqli_conn))
 /*
  * If all of the survey information is set add the results to the results table
  */
-if (       isset($_POST['test_cat']) && is_numeric($_POST['test_cat'])
-        && isset($_POST['is_organic']) && is_numeric($_POST['is_organic'])
-        && isset($_POST['taste']) && is_numeric($_POST['taste'])
-        && isset($_POST['texture']) && is_numeric($_POST['texture'])
-        && isset($_POST['crust']) && is_numeric($_POST['crust'])
-        && isset($_POST['toppings']) && is_numeric($_POST['toppings'])
-        && isset($_POST['visual']) && is_numeric($_POST['visual'])
-        && isset($_POST['aroma']) && is_numeric($_POST['aroma'])
+if (       isset($_POST['q1'])
+        && isset($_POST['q2'])  && is_numeric($_POST['q2'])
+        && isset($_POST['q3a']) && is_numeric($_POST['q3a'])
+        && isset($_POST['q3b']) && is_numeric($_POST['q3b'])
+        && isset($_POST['q3c']) && is_numeric($_POST['q3c'])
+        && isset($_POST['q3d']) && is_numeric($_POST['q3d'])
+        && isset($_POST['q4a']) && is_numeric($_POST['q4a'])
+        && isset($_POST['q4b']) && is_numeric($_POST['q4b'])
+        && isset($_POST['q4c']) && is_numeric($_POST['q4c'])
+        && isset($_POST['q4d']) && is_numeric($_POST['q4d'])
+        && isset($_POST['q5'])  && is_numeric($_POST['q5'])
+        && isset($_POST['q6'])
+        && isset($_POST['q7'])  && is_numeric($_POST['q7'])
+        && isset($_POST['q8'])  && is_numeric($_POST['q8'])
+        && isset($_POST['q9'])  && is_numeric($_POST['q9'])
+        && isset($_POST['q10'])  && is_numeric($_POST['q10'])
     )
 {
-    $test_cat   = $_POST['test_cat'];
-    $is_organic = $_POST['is_organic'];
-    $taste      = $_POST['taste'];
-    $texture    = $_POST['texture'];
-    $crust      = $_POST['crust'];
-    $toppings   = $_POST['toppings'];
-    $visual     = $_POST['visual'];
-    $aroma      = $_POST['aroma'];
 
     /* Submit the survey results */
-    submit_survey($mysqli_conn, $test_cat, $is_organic, $taste, $texture, $crust, $toppings, $visual, $aroma);
+    submit_survey($mysqli_conn, $_POST['q1'], $_POST['q2'], $_POST['q3a'], $_POST['q3b'], $_POST['q3c']
+                  $_POST['q3d'], $_POST['q4a'], $_POST['q4b'], $_POST['q4c'], $_POST['q4d'], $_POST['q5'],
+                  $_POST['q6'], $_POST['q7'], $_POST['q8'], $_POST['q9'], $_POST['q10'], $_POST['feedback']);
 
     /* Survey results recorded, redirect to main page */
     $_SESSION['success'] = "success";
