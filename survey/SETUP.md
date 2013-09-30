@@ -52,3 +52,13 @@ SURVEY AUTH CONFIGURAION
     $db_name = '';
     ```
 
+2.  Next, set the following permissions to various files that should never be made
+    accessible (even READ ONLY) to the public as they contain confidential data
+      such as passwords
+
+      a.    For the inc/auth file
+
+    ```bash
+    chown root.www-data auth.php
+    chmod 640 auth.php
+    ```
