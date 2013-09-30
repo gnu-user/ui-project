@@ -310,6 +310,11 @@
                             </select>
                         </div>
                     </div>
+                    <!-- FEEDBACK -->
+                    <div class="control-group">
+                        <p><strong>Please consider leaving feedback about the survey</strong></p>
+                        <textarea id="feedback" name="feedback" class="input-block-level" rows="3"></textarea>
+                    </div>
                     <!-- Submit survey -->
                     <div class="control-group">
                         <div class="controls">
