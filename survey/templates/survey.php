@@ -60,53 +60,177 @@
             ?>
             <form class="well form-horizontal" action="submit.php" method="post" accept-charset="UTF-8">
                 <fieldset>
-                    <!-- PIZZA FROM TEST 1 (ORGANIC) or TEST 2 (NON-ORGANIC) -->
+                    <!-- COMMUNICATIONS UNDER STRESSFUL SITUATION -->
                     <div class="control-group">
-                        <label for="test_cat" class="control-label"><strong><strong>I ate a slice of pizza from:</strong></strong></label>
+                        <label for="q1" class="control-label"><strong><strong>When you are in a stressful situation, which communications medium do you pick first to signal for help?</strong></strong></label>
                         <div class="controls">
-                            <select id="test_cat" name="test_cat" class="input-xlarge">
-                                <option></option>
-                                <option value="1">TEST 1 CATEGORY</option>
-                                <option value="0">TEST 2 CATEGORY</option>
+                            <select id="q1" name="q1" class="input-xlarge">
+                                <option>Please choose</option>
+                                <option value="Radio">Radio</option>
+                                <option value="Panic">Panic Button</option>
+                                <option value="Shouting">Shouting out loud</option>
+                                <option value="Other">Other (Please specify)</option>
+                            </select>
+                            <input type="text" style="display: none;">
+                        </div>
+                    </div>
+                    <!-- FLOOR PLANS EFFECTIVE -->
+                    <div class="control-group">
+                        <label for="q2" class="control-label"><strong><strong>How effective are maps/floor plans when attempting to navigate through a complex/building?</strong></strong></label>
+                        <div class="controls">
+                            <select id="q2" name="q2" class="input-xlarge">
+                                <option>Please choose</option>
+                                <option value="1">Don't know</option>
+                                <option value="2">Highly ineffective</option>
+                                <option value="3">Ineffective</option>
+                                <option value="4">I don't feel strongly either way</option>
+                                <option value="5">Effective</option>
+                                <option value="6">Highly effective</option>
                             </select>
                         </div>
                     </div>
-                    <!-- ORGANIC or NON-ORGANIC -->
+                    <!-- STRESSFUL SITUATION ON MEDIUM -->
                     <div class="control-group">
-                        <label for="is_organic" class="control-label"><strong><strong>I think the pizza I ate was:</strong></strong></label>
-                        <div class="controls">
-                            <select id="is_organic" name="is_organic" class="input-xlarge">
-                                <option></option>
-                                <option value="1">ORGANIC</option>
-                                <option value="0">NON-ORGANIC</option>
-                            </select>
+                        In a stressful situation, how easy is it to relay important situational information on the medium specified?
+                        In each situation, assume that the circumstances make it impossible to use any other medium except the one specified (due to noise, smoke, and so on).
+                        <!-- RADIO  -->
+                        <div class="control-group">
+                            <label for="q3a" class="control-label"><strong><strong>Radio:</strong></strong></label>
+                            <div class="controls">
+                                <select id="q3a" name="q3a" class="input-xlarge">
+                                    <option>Please choose</option>
+                                    <option value="1">Don’t know</option>
+                                    <option value="2">Very difficult</option>
+                                    <option value="3">Difficult</option>
+                                    <option value="4">I don't feel strongly either way</option>
+                                    <option value="5">Easy</option>
+                                    <option value="6">Very easy</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- VERBAL  -->
+                        <div class="control-group">
+                            <label for="q3b" class="control-label"><strong><strong>Verbal / Audible message / Shouting:</strong></strong></label>
+                            <div class="controls">
+                                <select id="q3b" name="q3b" class="input-xlarge">
+                                    <option>Please choose</option>
+                                    <option value="1">Don’t know</option>
+                                    <option value="2">Very difficult</option>
+                                    <option value="3">Difficult</option>
+                                    <option value="4">I don't feel strongly either way</option>
+                                    <option value="5">Easy</option>
+                                    <option value="6">Very easy</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- HAND  -->
+                        <div class="control-group">
+                            <label for="q3c" class="control-label"><strong><strong>Hand command / Gesture / Pointing:</strong></strong></label>
+                            <div class="controls">
+                                <select id="q3c" name="q3c" class="input-xlarge">
+                                    <option>Please choose</option>
+                                    <option value="1">Don’t know</option>
+                                    <option value="2">Very difficult</option>
+                                    <option value="3">Difficult</option>
+                                    <option value="4">I don't feel strongly either way</option>
+                                    <option value="5">Easy</option>
+                                    <option value="6">Very easy</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- TOUCH  -->
+                        <div class="control-group">
+                            <label for="q3d" class="control-label"><strong><strong>Tactile command / Shoulder tap:</strong></strong></label>
+                            <div class="controls">
+                                <select id="q3d" name="q3d" class="input-xlarge">
+                                    <option>Please choose</option>
+                                    <option value="1">Don’t know</option>
+                                    <option value="2">Very difficult</option>
+                                    <option value="3">Difficult</option>
+                                    <option value="4">I don't feel strongly either way</option>
+                                    <option value="5">Easy</option>
+                                    <option value="6">Very easy</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
-                    <!-- TASTE -->
+                    <!-- STRESSFUL SITUATION ON MEDIUM -->
                     <div class="control-group">
-                        <label for="taste" class="control-label"><strong><strong>The pizza taste was:</strong></strong></label>
-                        <div class="controls">
-                            <select id="taste" name="taste" class="input-xlarge">
-                                <option></option>
-                                <option value="1">Worst tasting pizza I've ever had</option>
-                                <option value="2">Barely edible</option>
-                                <option value="3">Mediocre</option>
-                                <option value="4">Good</option>
-                                <option value="5">Best tasting pizza I've ever had</option>
-                            </select>
+                        <divclass="control-label"><strong><strong>
+                            In a stressful situation, how easy is it to determine the location of your partners using the medium specified?
+                            In each situation, assume that the circumstances make it impossible to use any other medium except the one specified (due to noise, smoke, and so on).
+                        </strong></strong></div>
+                        <!-- RADIO  -->
+                        <div class="control-group">
+                            <label for="q4a" class="control-label"><strong><strong>Radio:</strong></strong></label>
+                            <div class="controls">
+                                <select id="q4a" name="q4a" class="input-xlarge">
+                                    <option>Please choose</option>
+                                    <option value="1">Don’t know</option>
+                                    <option value="2">Very difficult</option>
+                                    <option value="3">Difficult</option>
+                                    <option value="4">I don't feel strongly either way</option>
+                                    <option value="5">Easy</option>
+                                    <option value="6">Very easy</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- VERBAL  -->
+                        <div class="control-group">
+                            <label for="q4b" class="control-label"><strong><strong>Verbal / Audible message / Shouting:</strong></strong></label>
+                            <div class="controls">
+                                <select id="q4b" name="q4b" class="input-xlarge">
+                                    <option>Please choose</option>
+                                    <option value="1">Don’t know</option>
+                                    <option value="2">Very difficult</option>
+                                    <option value="3">Difficult</option>
+                                    <option value="4">I don't feel strongly either way</option>
+                                    <option value="5">Easy</option>
+                                    <option value="6">Very easy</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- HAND  -->
+                        <div class="control-group">
+                            <label for="q4c" class="control-label"><strong><strong>Hand command / Gesture / Pointing:</strong></strong></label>
+                            <div class="controls">
+                                <select id="q4c" name="q4c" class="input-xlarge">
+                                    <option>Please choose</option>
+                                    <option value="1">Don’t know</option>
+                                    <option value="2">Very difficult</option>
+                                    <option value="3">Difficult</option>
+                                    <option value="4">I don't feel strongly either way</option>
+                                    <option value="5">Easy</option>
+                                    <option value="6">Very easy</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- TOUCH  -->
+                        <div class="control-group">
+                            <label for="q4d" class="control-label"><strong><strong>Tactile command / Shoulder tap:</strong></strong></label>
+                            <div class="controls">
+                                <select id="q4d" name="q4d" class="input-xlarge">
+                                    <option>Please choose</option>
+                                    <option value="1">Don’t know</option>
+                                    <option value="2">Very difficult</option>
+                                    <option value="3">Difficult</option>
+                                    <option value="4">I don't feel strongly either way</option>
+                                    <option value="5">Easy</option>
+                                    <option value="6">Very easy</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
-                    <!-- TEXTURE -->
+                    <!-- CHOOSE MEDIUM -->
                     <div class="control-group">
-                        <label for="texture" class="control-label"><strong>The texture was:</strong></label>
+                        <label for="q5" class="control-label"><strong>Please choose which medium you would prefer as your fastest, most effective communications tool:</strong></label>
                         <div class="controls">
-                            <select id="texture" name="texture" class="input-xlarge">
-                                <option></option>
-                                <option value="1">Worst texture I've ever had</option>
-                                <option value="2">Barely edible</option>
-                                <option value="3">Mediocre</option>
-                                <option value="4">Good</option>
-                                <option value="5">Best texture I've ever had</option>
+                            <select id="q5" name="q5" class="input-xlarge">
+                                <option>Please choose</option>
+                                <option value="1">Radio</option>
+                                <option value="2">Verbal</option>
+                                <option value="3">Hand command / Gesture / Pointing</option>
+                                <option value="4">Tactile command / Shoulder tap</option>
                             </select>
                         </div>
                     </div>
@@ -115,7 +239,7 @@
                         <label for="crust" class="control-label"><strong>The taste of the crust was:</strong></label>
                         <div class="controls">
                             <select id="crust" name="crust" class="input-xlarge">
-                                <option></option>
+                                <option>Please choose</option>
                                 <option value="1">Worst crust I've ever tasted</option>
                                 <option value="2">Barely edible</option>
                                 <option value="3">Mediocre</option>
@@ -129,7 +253,7 @@
                         <label for="toppings" class="control-label"><strong>The taste of the toppings was:</strong></label>
                         <div class="controls">
                             <select id="toppings" name="toppings" class="input-xlarge">
-                                <option></option>
+                                <option>Please choose</option>
                                 <option value="1">Worst tasting toppings I've ever had</option>
                                 <option value="2">Barely edible</option>
                                 <option value="3">Mediocre</option>
@@ -143,7 +267,7 @@
                         <label for="visual" class="control-label"><strong>The visual appeal was:</strong></label>
                         <div class="controls">
                             <select id="visual" name="visual" class="input-xlarge">
-                                <option></option>
+                                <option>Please choose</option>
                                 <option value="1">Worst looking pizza I've ever seen</option>
                                 <option value="2">Poor aesthetic appeal</option>
                                 <option value="3">Mediocre aesthetic appeal</option>
@@ -157,7 +281,7 @@
                         <label for="aroma" class="control-label"><strong>The aroma was:</strong></label>
                         <div class="controls">
                             <select id="aroma" name="aroma" class="input-xlarge">
-                                <option></option>
+                                <option>Please choose</option>
                                 <option value="1">Worst smelling pizza I've ever had</option>
                                 <option value="2">Poor aroma</option>
                                 <option value="3">Mediocre aroma</option>
