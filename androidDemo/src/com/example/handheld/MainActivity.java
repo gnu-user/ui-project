@@ -2,66 +2,20 @@ package com.example.handheld;
 
 import android.app.Activity;
 import android.content.Context;
-import android.graphics.BitmapRegionDecoder;
-import android.graphics.Matrix;
-import android.graphics.PointF;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Vibrator;
-import android.util.Log;
 import android.view.Menu;
-import android.view.Window;
-import android.view.WindowManager;
-import android.widget.ImageView;
+import android.view.View;
 
-public class MainActivity extends Activity implements Runnable {
-
-	ImageView bg;
-	int height;
-	int width;
-
+public class MainActivity extends Activity implements Runnable
+{
+    private volatile static boolean run = true;
+    
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-
-		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-				WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		setContentView(R.layout.activity_main);
-
-		bg = (ImageView) this.findViewById(R.id.background);
-		// Button panic = (Button) this.findViewById(R.id.alert);
-
-		//BitmapRegionDecoder decoder = null;
-
-		Log.v("HEIGHT", "" + bg.getHeight());
-
-		Log.v("Screen height", ""
-				+ getResources().getDisplayMetrics().heightPixels);
-		height = getResources().getDisplayMetrics().heightPixels;
-		width = getResources().getDisplayMetrics().widthPixels;
-		Log.v("leftover Size", "" + height);
-
-		// Log.v("Other height", ""+m.ydpi);
-		/*
-		try {
-			InputStream istream = this.getResources().openRawResource(
-					R.drawable.background);
-			decoder = BitmapRegionDecoder.newInstance(istream, false);
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-
-		imageOffset.set(0, 0);
-		Bitmap bMap = decoder.decodeRegion(new Rect((int)imageOffset.x, (int)imageOffset.y, getResources()
-				.getDisplayMetrics().widthPixels, height), null);
-		bg.setImageBitmap(bMap);*/
-		//bg.setImageBitmap(decodeSampledBitmapFromResource(getResources(), R.drawable.background, width, height));
-		
-		/*Drawable drawable = getResources().getDrawable(R.drawable.background);
-		Bitmap b = ((BitmapDrawable)drawable).getBitmap();
-		bg.setImageBitmap(b);*/
 		(new Thread(this)).start();
 	}
 
@@ -82,7 +36,7 @@ public class MainActivity extends Activity implements Runnable {
 		long counter = 0;
 		long delay = 500;
 		long amount = 100;
-		while(true)
+		while(run)
 		{
 			if(counter%10==0 && counter != 0)
 			{
@@ -108,5 +62,25 @@ public class MainActivity extends Activity implements Runnable {
 			}
 		}
 	}
+	
+	public void panic(View view)
+	{
+	    run = false;
+        Intent intent = new Intent(MainActivity.this.getBaseContext(), PanicActivity.class);
+        MainActivity.this.startActivity(intent);
+	}
+	
+   @Override
+    public void onPause()
+    {
+        run = false;
+        super.onResume();
+    }
 
+	@Override
+	public void onResume()
+	{
+	    run = true;
+	    super.onResume();
+	}
 }
