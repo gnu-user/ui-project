@@ -5,9 +5,9 @@
     android:versionName="1.0" >
 
     <uses-permission android:name="android.permission.VIBRATE" />
-    
+
     <uses-sdk
-        android:minSdkVersion="17"
+        android:minSdkVersion="10"
         android:targetSdkVersion="18" />
 
     <application
@@ -23,6 +23,10 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.handheld.PanicActivity"
+            android:label="@string/title_activity_panic" >
         </activity>
     </application>
 
