@@ -1,4 +1,6 @@
-package com.example.handheld;
+package com.HTANS.handheld;
+
+import com.example.handheld.R;
 
 import android.os.Bundle;
 import android.os.Vibrator;
