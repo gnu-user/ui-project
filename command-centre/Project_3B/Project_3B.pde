@@ -24,6 +24,9 @@ import vialab.SMT.*;
   Zone sq2_member; 
   Zone sq2_leader;
   
+  Zone radial;
+  PImage iradial;
+  
   PImage i_moveMarker;
   PImage i_alertMarker;
   
@@ -59,13 +62,16 @@ void setup(){
   i_sq1 = loadImage("sq1.png");
   
   isq1_member = loadImage("squad1.png");
-  isq1_leader = loadImage("squad1.png");
+  isq1_leader = loadImage("squad1l.png");
   
   isq1_regroup = loadImage("squad1re.png");
   isq2_regroup = loadImage("squad1re.png");
   
   isq2_member = loadImage("squad2.png");
-  isq2_leader = loadImage("squad2.png");
+  isq2_leader = loadImage("squad2l.png");
+  
+  iradial = loadImage("radial.png");
+  radial = new ImageZone ("radialMarker", iradial, -1000,-1000, 1, 1);
   
   sq1_member = new ImageZone ("sq1_member", isq1_member, 964, 399, 40, 40);
   sq1_leader = new ImageZone ("sq1_leader", isq1_leader, 1043, 555, 40, 40);
@@ -91,6 +97,7 @@ void setup(){
   background.add(sq2_member);
   background.add(sq2_leader);
   
+  SMT.add(radial);
   SMT.add(background);
   
   SMT.add(commands0);
@@ -103,6 +110,7 @@ void setup(){
 
 void touchBackground(Zone zone){
   zone.rst(false, true, true); // enable dragging
+  radial.removeFromParent();
 }
 
 void touchUpBackground(Zone z, Touch t){
@@ -230,6 +238,63 @@ void touchUpSquad1(Zone z, Touch t){
   move = false;
   regroup = false;
   alert = false;
+}
+
+void touchSq1_member(Zone z){
+  z.drag();
+}
+void touchSq1_leader(Zone z){
+  z.drag();
+}
+
+void touchSq2_member(Zone z){
+  z.drag();
+}
+void touchSq2_leader(Zone z){
+  z.drag();
+}
+
+void touchRadial(Zone z){
+  z.removeFromParent();
+}
+
+
+void touchUpSq1_member(Zone z, Touch t){
+  println(t.currentTime.subtract(t.startTime).getSeconds());
+  if (t.currentTime.subtract(t.startTime).getSeconds() > 0){
+    radial.removeFromParent();
+    radial = new ImageZone("radial", iradial, round(t.getLocalX(z)) - 100, round(t.getLocalY(z)) - 100, 200, 200);
+    sq1_member.add(radial);
+  }
+}
+void touchUpSq1_leader(Zone z, Touch t){
+  println(t.currentTime.subtract(t.startTime).getSeconds());
+  if (t.currentTime.subtract(t.startTime).getSeconds() > 0){
+    radial.removeFromParent();
+    radial = new ImageZone("radial", iradial, round(t.getLocalX(z)) - 100, round(t.getLocalY(z)) - 100, 200, 200);
+    sq1_leader.add(radial);
+  }
+}
+
+void touchUpSq2_member(Zone z, Touch t){
+   println(t.currentTime.subtract(t.startTime).getSeconds());
+  if (t.currentTime.subtract(t.startTime).getSeconds() > 0){
+      if (t.currentTime.subtract(t.startTime).getSeconds() > 0){
+    radial.removeFromParent();
+    radial = new ImageZone("radial", iradial, round(t.getLocalX(z)) - 100, round(t.getLocalY(z)) - 100, 200, 200);
+    sq2_member.add(radial);
+  }
+  } 
+}
+void touchUpSq2_leader(Zone z, Touch t){
+  println(t.currentTime.subtract(t.startTime).getSeconds());
+  if (t.currentTime.subtract(t.startTime).getSeconds() > 0){
+      if (t.currentTime.subtract(t.startTime).getSeconds() > 0){
+    radial.removeFromParent();
+    radial = new ImageZone("radial", iradial, round(t.getLocalX(z)) - 100, round(t.getLocalY(z)) - 100, 200, 200);
+    sq2_leader.add(radial);
+  }
+  }
 }
 
 void draw(){
