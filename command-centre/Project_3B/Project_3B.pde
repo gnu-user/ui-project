@@ -65,7 +65,7 @@ void setup(){
   isq1_leader = loadImage("squad1l.png");
   
   isq1_regroup = loadImage("squad1re.png");
-  isq2_regroup = loadImage("squad1re.png");
+  isq2_regroup = loadImage("squad2re.png");
   
   isq2_member = loadImage("squad2.png");
   isq2_leader = loadImage("squad2l.png");
